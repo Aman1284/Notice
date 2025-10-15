@@ -111,6 +111,9 @@ def create_pdf(letterhead_option, salutation, message, sender_name, designation,
         st.warning(f"Signature missing: {e}")
 
     # Name & designation below signature
+    c.setFont("Times-Bold", 16)
+    c.drawCentredString(width / 2, top_y + 25, "NOTICE")
+    
     c.setFont("Times-Bold", 12)
     c.drawRightString(right_margin, name_y, sender_name)
     c.setFont("Times-Roman", 11)
