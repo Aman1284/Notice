@@ -45,9 +45,9 @@ def create_pdf(letterhead_option, salutation, message, sender_name, designation,
 
     # Select letterhead
     if letterhead_option == "Just Kids":
-        letterhead_path = "assets/justkids.png"
+        letterhead_path = "justkids.png"
     else:
-        letterhead_path = "assets/jkpublic.png"
+        letterhead_path = "jkpublic.png"
 
     # Draw letterhead
     try:
@@ -102,7 +102,7 @@ def create_pdf(letterhead_option, salutation, message, sender_name, designation,
     name_y = 190  # base line for name text
 
     try:
-        signature = ImageReader("assets/Dimple Agarwal.png")
+        signature = ImageReader("Dimple Agarwal.png")
         # Draw signature slightly above the name (10 pts gap)
         sig_height = 50  # signature image height in pts
         sig_bottom_y = name_y + 10  # bottom of signature just above name
